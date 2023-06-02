@@ -1,0 +1,347 @@
+<div class="bg-white mt-2 rounded-top">
+  <div class="d-flex justify-content-end mx-3 pt-4 printingInvoices">
+    <button class="btn print mx-1 rounded-2">
+      طباعةالفاتورة<svg
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.5 3.65625V4.5H14.0625C14.8084 4.5 15.5238 4.79632 16.0512 5.32376C16.5787 5.85121 16.875 6.56658 16.875 7.3125V11.5312C16.875 12.0534 16.6676 12.5542 16.2984 12.9234C15.9292 13.2926 15.4284 13.5 14.9062 13.5H14.0625V14.3438C14.0625 14.8659 13.8551 15.3667 13.4859 15.7359C13.1167 16.1051 12.6159 16.3125 12.0938 16.3125H5.90625C5.38411 16.3125 4.88335 16.1051 4.51413 15.7359C4.14492 15.3667 3.9375 14.8659 3.9375 14.3438V13.5H3.09375C2.57161 13.5 2.07085 13.2926 1.70163 12.9234C1.33242 12.5542 1.125 12.0534 1.125 11.5312V7.3125C1.125 6.56658 1.42132 5.85121 1.94876 5.32376C2.47621 4.79632 3.19158 4.5 3.9375 4.5H4.5V3.65625C4.5 3.13411 4.70742 2.63335 5.07663 2.26413C5.44585 1.89492 5.94661 1.6875 6.46875 1.6875H11.5312C12.0534 1.6875 12.5542 1.89492 12.9234 2.26413C13.2926 2.63335 13.5 3.13411 13.5 3.65625ZM5.625 3.65625V4.5H12.375V3.65625C12.375 3.43247 12.2861 3.21786 12.1279 3.05963C11.9696 2.90139 11.755 2.8125 11.5312 2.8125H6.46875C6.24497 2.8125 6.03036 2.90139 5.87213 3.05963C5.71389 3.21786 5.625 3.43247 5.625 3.65625ZM5.0625 14.3438C5.0625 14.5675 5.15139 14.7821 5.30963 14.9404C5.46786 15.0986 5.68247 15.1875 5.90625 15.1875H12.0938C12.3175 15.1875 12.5321 15.0986 12.6904 14.9404C12.8486 14.7821 12.9375 14.5675 12.9375 14.3438V10.9688C12.9375 10.745 12.8486 10.5304 12.6904 10.3721C12.5321 10.2139 12.3175 10.125 12.0938 10.125H5.90625C5.68247 10.125 5.46786 10.2139 5.30963 10.3721C5.15139 10.5304 5.0625 10.745 5.0625 10.9688V14.3438ZM14.0625 12.375H14.9062C15.13 12.375 15.3446 12.2861 15.5029 12.1279C15.6611 11.9696 15.75 11.755 15.75 11.5312V7.3125C15.75 6.86495 15.5722 6.43572 15.2557 6.11926C14.9393 5.80279 14.5101 5.625 14.0625 5.625H3.9375C3.48995 5.625 3.06072 5.80279 2.74426 6.11926C2.42779 6.43572 2.25 6.86495 2.25 7.3125V11.5312C2.25 11.755 2.33889 11.9696 2.49713 12.1279C2.65536 12.2861 2.86997 12.375 3.09375 12.375H3.9375V10.9688C3.9375 10.4466 4.14492 9.94585 4.51413 9.57663C4.88335 9.20742 5.38411 9 5.90625 9H12.0938C12.6159 9 13.1167 9.20742 13.4859 9.57663C13.8551 9.94585 14.0625 10.4466 14.0625 10.9688V12.375Z"
+          fill="#10AB4E"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+<div class="bg-white pt-3 rounded-bottom">
+  <div
+    (click)="toggleCollapse(1)"
+    [attr.aria-expanded]="isCollapseOpen(1) ? 'true' : 'false'"
+    [attr.aria-controls]="'multiCollapseExample1'"
+    class="detailOfPrint mx-3 p-2 rounded-2 d-flex justify-content-between"
+    [ngClass]="{ active: isCollapseOpen(1) }"
+  >
+    <div>
+      <a class="text-decoration-none">بيانات عامة</a>
+    </div>
+    <div>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        [ngClass]="{ rotated: isCollapseOpen(1) }"
+      >
+        <path
+          d="M10.674 12.9978L5.80198 7.99976L10.674 3.00176C10.7612 2.91247 10.81 2.79259 10.81 2.66776C10.81 2.54294 10.7612 2.42306 10.674 2.33376C10.6316 2.29053 10.5811 2.25618 10.5252 2.23273C10.4694 2.20928 10.4095 2.1972 10.349 2.1972C10.2884 2.1972 10.2285 2.20928 10.1727 2.23273C10.1169 2.25618 10.0663 2.29053 10.024 2.33376L4.83998 7.65076C4.74897 7.74414 4.69803 7.86937 4.69803 7.99976C4.69803 8.13016 4.74897 8.25539 4.83998 8.34876L10.023 13.6658C10.0654 13.7093 10.1161 13.7439 10.1721 13.7675C10.2281 13.7912 10.2882 13.8034 10.349 13.8034C10.4098 13.8034 10.4699 13.7912 10.5259 13.7675C10.5819 13.7439 10.6326 13.7093 10.675 13.6658C10.7622 13.5765 10.811 13.4566 10.811 13.3318C10.811 13.2069 10.7622 13.0871 10.675 12.9978L10.674 12.9978Z"
+          fill="#222222"
+        />
+      </svg>
+    </div>
+  </div>
+
+  <div
+    class="collapse multi-collapse"
+    id="multiCollapseExample1"
+    [ngClass]="{ show: isCollapseOpen(1) }"
+  >
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>يومي قبل الخصم</p></div>
+      <div class="color-value"><p>250 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>يومي بعد الخصم</p></div>
+      <div class="color-value"><p>187 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>شهري قبل الخصم</p></div>
+      <div class="color-value"><p>600 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>شهري بعد الخصم</p></div>
+      <div class="color-value"><p>5.500 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>اسبوعي</p></div>
+      <div class="color-value"><p>157 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>كيلو زيادة</p></div>
+      <div class="color-value"><p>0.50 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>ساعة زيادة</p></div>
+      <div class="color-value"><p>15.58 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>كم مسموح بها</p></div>
+      <div class="color-value"><p>250 كم</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>ساعات مسموح بها</p></div>
+      <div class="color-value"><p>2 ساعة</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>عدد الساعات في اليوم</p></div>
+      <div class="color-value"><p>5 ساعة</p></div>
+    </div>
+  </div>
+  <!-- end collapse one -->
+  <!-- start the second colapse -->
+  <div
+    (click)="toggleCollapse(2)"
+    [attr.aria-expanded]="isCollapseOpen(2) ? 'true' : 'false'"
+    [attr.aria-controls]="'multiCollapseExample1'"
+    [ngClass]="{ active: isCollapseOpen(2) }"
+    class="detailOfPrint mt-3 mx-3 p-2 rounded-2 d-flex justify-content-between"
+  >
+    <div>
+      <a class="text-decoration-none">تكاليف</a>
+    </div>
+    <div>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        [ngClass]="{ rotated: isCollapseOpen(2) }"
+      >
+        <path
+          d="M10.674 12.9978L5.80198 7.99976L10.674 3.00176C10.7612 2.91247 10.81 2.79259 10.81 2.66776C10.81 2.54294 10.7612 2.42306 10.674 2.33376C10.6316 2.29053 10.5811 2.25618 10.5252 2.23273C10.4694 2.20928 10.4095 2.1972 10.349 2.1972C10.2884 2.1972 10.2285 2.20928 10.1727 2.23273C10.1169 2.25618 10.0663 2.29053 10.024 2.33376L4.83998 7.65076C4.74897 7.74414 4.69803 7.86937 4.69803 7.99976C4.69803 8.13016 4.74897 8.25539 4.83998 8.34876L10.023 13.6658C10.0654 13.7093 10.1161 13.7439 10.1721 13.7675C10.2281 13.7912 10.2882 13.8034 10.349 13.8034C10.4098 13.8034 10.4699 13.7912 10.5259 13.7675C10.5819 13.7439 10.6326 13.7093 10.675 13.6658C10.7622 13.5765 10.811 13.4566 10.811 13.3318C10.811 13.2069 10.7622 13.0871 10.675 12.9978L10.674 12.9978Z"
+          fill="#222222"
+        />
+      </svg>
+    </div>
+  </div>
+
+  <div
+    class="collapse multi-collapse"
+    id="multiCollapseExample2"
+    [ngClass]="{ show: isCollapseOpen(2) }"
+  >
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>يومي قبل الخصم</p></div>
+      <div class="color-value"><p>250 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>تفويض تم</p></div>
+      <div class="color-value"><p>5 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>تأمين مميز</p></div>
+      <div class="color-value"><p>75 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>تكلفة البنزين</p></div>
+      <div class="color-value"><p>0 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>تكلفة شحن</p></div>
+      <div class="color-value"><p>5 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>الضريبة المضافة</p></div>
+      <div class="color-value"><p>5 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>تكلفة استبدال سيارة</p></div>
+      <div class="color-value"><p>5 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>اجمالي قيمة الاستبدال</p></div>
+      <div class="color-value"><p>300 ر.س</p></div>
+    </div>
+    <div class="mx-3 px-2 pt-1" style="color: #dfdfdf">
+      <div><p>تكاليف اضافية</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>ملاحظات بدون ضريبة</p></div>
+      <div class="color-value"><p>0 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>ملاحظات شاملة ضريبة</p></div>
+      <div class="color-value"><p>60 ر.س</p></div>
+    </div>
+  </div>
+  <!-- end collapse second -->
+  <!-- start the third colapse -->
+  <div
+    (click)="toggleCollapse(3)"
+    [attr.aria-expanded]="isCollapseOpen(3) ? 'true' : 'false'"
+    [attr.aria-controls]="'multiCollapseExample1'"
+    [ngClass]="{ active: isCollapseOpen(3) }"
+    class="detailOfPrint mt-3 mx-3 p-2 rounded-2 d-flex justify-content-between"
+  >
+    <div>
+      <a class="text-decoration-none">فاتورة</a>
+    </div>
+    <div>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        [ngClass]="{ rotated: isCollapseOpen(3) }"
+      >
+        <path
+          d="M10.674 12.9978L5.80198 7.99976L10.674 3.00176C10.7612 2.91247 10.81 2.79259 10.81 2.66776C10.81 2.54294 10.7612 2.42306 10.674 2.33376C10.6316 2.29053 10.5811 2.25618 10.5252 2.23273C10.4694 2.20928 10.4095 2.1972 10.349 2.1972C10.2884 2.1972 10.2285 2.20928 10.1727 2.23273C10.1169 2.25618 10.0663 2.29053 10.024 2.33376L4.83998 7.65076C4.74897 7.74414 4.69803 7.86937 4.69803 7.99976C4.69803 8.13016 4.74897 8.25539 4.83998 8.34876L10.023 13.6658C10.0654 13.7093 10.1161 13.7439 10.1721 13.7675C10.2281 13.7912 10.2882 13.8034 10.349 13.8034C10.4098 13.8034 10.4699 13.7912 10.5259 13.7675C10.5819 13.7439 10.6326 13.7093 10.675 13.6658C10.7622 13.5765 10.811 13.4566 10.811 13.3318C10.811 13.2069 10.7622 13.0871 10.675 12.9978L10.674 12.9978Z"
+          fill="#222222"
+        />
+      </svg>
+    </div>
+  </div>
+
+  <div
+    class="collapse multi-collapse"
+    id="multiCollapseExample3"
+    [ngClass]="{ show: isCollapseOpen(3) }"
+  >
+    <div class="d-flex justify-content-between mx-3 px-2 mt-1">
+      <div class="color-coloapse"><p>حالة السداد</p></div>
+      <div class="Outborder rounded-2">
+        <div class="insideborder m-1 p-1 px-2 rounded-2">محلي</div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2 mt-1">
+      <div class="color-coloapse"><p>رصيد النقاط</p></div>
+      <div class="color-value"><p>5700</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>طريقة السداد</p></div>
+      <div class="Outborder rounded-2">
+        <div class="insideborder m-1 p-1 rounded-2">
+          شبكة<i class="fa-regular fa-credit-card"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end collapse third -->
+  <!-- start the fourth colapse -->
+  <div
+    (click)="toggleCollapse(4)"
+    [attr.aria-expanded]="isCollapseOpen(4) ? 'true' : 'false'"
+    [attr.aria-controls]="'multiCollapseExample4'"
+    class="detailOfPrint mt-3 mx-3 p-2 rounded-2 d-flex justify-content-between"
+    [ngClass]="{ active: isCollapseOpen(4) }"
+  >
+    <div>
+      <a class="text-decoration-none">ملخص للفاتورة</a>
+    </div>
+    <div>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        [ngClass]="{ rotated: isCollapseOpen(4) }"
+      >
+        <path
+          d="M10.674 12.9978L5.80198 7.99976L10.674 3.00176C10.7612 2.91247 10.81 2.79259 10.81 2.66776C10.81 2.54294 10.7612 2.42306 10.674 2.33376C10.6316 2.29053 10.5811 2.25618 10.5252 2.23273C10.4694 2.20928 10.4095 2.1972 10.349 2.1972C10.2884 2.1972 10.2285 2.20928 10.1727 2.23273C10.1169 2.25618 10.0663 2.29053 10.024 2.33376L4.83998 7.65076C4.74897 7.74414 4.69803 7.86937 4.69803 7.99976C4.69803 8.13016 4.74897 8.25539 4.83998 8.34876L10.023 13.6658C10.0654 13.7093 10.1161 13.7439 10.1721 13.7675C10.2281 13.7912 10.2882 13.8034 10.349 13.8034C10.4098 13.8034 10.4699 13.7912 10.5259 13.7675C10.5819 13.7439 10.6326 13.7093 10.675 13.6658C10.7622 13.5765 10.811 13.4566 10.811 13.3318C10.811 13.2069 10.7622 13.0871 10.675 12.9978L10.674 12.9978Z"
+          fill="#222222"
+        />
+      </svg>
+    </div>
+  </div>
+
+  <div
+    class="collapse multi-collapse"
+    id="multiCollapseExample4"
+    [ngClass]="{ show: isCollapseOpen(4) }"
+  >
+    <div class="d-flex justify-content-between mx-3 px-2 mt-1">
+      <div class="color-coloapse"><p>سعر السيارة</p></div>
+      <div class="color-value"><p>500 ر.س</p></div>
+    </div>
+    <div
+      class="d-flex justify-content-between mt-1 mx-3 px-2"
+      style="color: #dfdfdf"
+    >
+      <div><p>خصومات</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>خصم اداري</p></div>
+      <div class="color-value"><p>0 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>قيمة الخصم نقاط</p></div>
+      <div class="color-value"><p>0 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>قيمة الخصم - كود خصم</p></div>
+      <div class="color-value"><p>25 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>الخصومات الكلية</p></div>
+      <div class="color-value"><p>500 ر.س</p></div>
+    </div>
+    <div class="mx-4 px-4 underline"></div>
+    <div class="d-flex justify-content-between mt-2 mx-3 px-2">
+      <div class="color-coloapse"><p>السعر بعد الخصم</p></div>
+      <div class="color-value"><p>275 ر.س</p></div>
+    </div>
+    <div
+      class="d-flex justify-content-between mt-1 mx-3 px-2"
+      style="color: #dfdfdf"
+    >
+      <div><p>سداد و دفعات</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>أمانات مخالفات</p></div>
+      <div class="color-value"><p>0 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>رصيد الأمانات</p></div>
+      <div class="color-value"><p>60 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2 mt-1">
+      <div class="color-coloapse"><p>ايراد يومي</p></div>
+      <div class="color-value"><p>275 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>ايراد شهري</p></div>
+      <div class="color-value"><p>275 ر.س</p></div>
+    </div>
+    <div class="d-flex justify-content-between mx-3 px-2">
+      <div class="color-coloapse"><p>ايراد اسبوعي</p></div>
+      <div class="color-value"><p>275 ر.س</p></div>
+    </div>
+    <div class="mx-4 px-4 underline"></div>
+    <div class="endOfBill mx-4 mt-3 rounded-2">
+      <div class="d-flex justify-content-between mx-3 px-2 pt-3 fw-bold">
+        <div style="color: #353535"><p>المبلغ الكلي</p></div>
+        <div class="price fw-bold"><p>2090 ر.س</p></div>
+      </div>
+      <div class="my-2 underline2"></div>
+      <div class="d-flex justify-content-between mx-3 px-2">
+        <div class="color-coloapse"><p>السعر الكلي المدفوع</p></div>
+        <div class="color-value"><p>275 ر.س</p></div>
+      </div>
+      <div class="d-flex justify-content-between mx-3 px-2">
+        <div class="color-coloapse">
+          <p style="font-size: 12px">
+            السعر الكلي المتبقي
+            <span style="font-size: 10px">(مطالبة عند الاقفال)</span>
+          </p>
+        </div>
+        <div class="color-value">
+          <p style="font-size: 12px">275 ر.س</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mx-3 px-2">
+        <div class="color-coloapse"><p>الحد الانتهائي</p></div>
+        <div class="color-value"><p>-3.5 ر.س</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- end collapse fourth -->
+  <div class="text-center py-3 fw-bold">
+    <p style="color: #222222">#626328</p>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+.row .col-sm-11 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-brand img {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+.masseage-icon {
+  background-color: #dfeeff;
+  /* padding: 10px; */
+}
+
+.row .col-sm-1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar {
+  /* width: 250px; */
+  background-color: #3d5653;
+  direction: ltr;
+  /* Displayed width when shown */
+}
+
+i {
+  color: #d6a218;
+}
+.icon,
+.image {
+  vertical-align: middle;
+}
+p {
+  color: #f6f9f8;
+  font-size: 12px;
+}
+
+.link1 {
+  background-color: #48746f;
+}
+.color p {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.color-box1 {
+  background-color: #f8d65e;
+}
+.color-box2 {
+  background-color: #ff4b4b;
+}
+.color-box3 {
+  background-color: #5458f7;
+}
+.color-box4 {
+  background-color: #62d2ff;
+}
+.icon-end {
+  position: absolute;
+  z-index: 999999999;
+  top: 90%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.bottom {
+  background-color: #3d5653;
+  padding: 10px;
+}
